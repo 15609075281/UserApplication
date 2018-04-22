@@ -9,17 +9,22 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:name="user.joker.com.libs_base.MyApplication"
-          >
+    >
         <activity android:name=".MainActivity">
 
         </activity>
-        <!--login-->
-        <activity android:name=".ui.activity.login.LoginActivity">
+
+        <!--guide-->
+        <activity android:name=".ui.activity.guide.GuideActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <!--login-->
+        <activity android:name=".ui.activity.login.LoginActivity">
+
         </activity>
     </application>
 
