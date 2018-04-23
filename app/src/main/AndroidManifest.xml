@@ -1,31 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.joker.user">
+		  package="com.joker.user">
 
-    <application
-            android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
-            android:supportsRtl="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-            android:name="user.joker.com.libs_base.MyApplication"
-    >
-        <activity android:name=".MainActivity">
+	<application
+			android:allowBackup="true"
+			android:icon="@mipmap/ic_launcher"
+			android:label="@string/app_name"
+			android:supportsRtl="true"
+			android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+			android:name="user.joker.com.libs_base.MyApplication"
+	>
+		<activity android:name=".MainActivity">
 
-        </activity>
+		</activity>
 
-        <!--guide-->
-        <activity android:name=".ui.activity.guide.GuideActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+		<!--guide-->
+		<activity android:name=".ui.activity.guide.GuideActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        <!--login-->
-        <activity android:name=".ui.activity.login.LoginActivity">
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".ui.activity.guide.GuiDeOneActivity">
+			
+		</activity>
+		<!--login-->
+		<activity android:name=".ui.activity.login.LoginActivity">
 
-        </activity>
-    </application>
+		</activity>
+		<!--register-->
+		<activity android:name=".ui.activity.register.RegisterActivity">
+
+		</activity>
+	</application>
 
 </manifest>

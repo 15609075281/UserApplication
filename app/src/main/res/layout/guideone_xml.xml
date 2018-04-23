@@ -13,12 +13,12 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content">
 			<ImageView
-					android:id="@+id/guide_login"
+					android:id="@+id/guide_one_login"
 					android:src="@mipmap/guide_login"
 					android:layout_width="146dp"
 					android:layout_height="57dp"/>
 			<ImageView
-					android:id="@+id/guide_signup"
+					android:id="@+id/guide_one_signup"
 					android:layout_marginTop="31dp"
 					android:src="@mipmap/guide_singup"
 					android:layout_width="146dp"
@@ -33,7 +33,7 @@
 				android:layout_marginBottom="42dp"
 				android:layout_height="50dp">
 			<TextView
-					android:id="@+id/guide_skip"
+					android:id="@+id/guide_one_skip"
 					android:text="SKIP"
 					android:textStyle="bold"
 					android:textSize="14dp"
@@ -41,11 +41,6 @@
 					android:textColor="#ffffff"
 					android:layout_width="73dp"
 					android:layout_height="23dp"/>
-
-			<ImageView
-					android:src="@mipmap/guide_botto"
-					android:layout_width="23dp"
-					android:layout_height="16dp"/>
 
 		</LinearLayout>
 

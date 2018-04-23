@@ -15,4 +15,9 @@ public class SplashActivity extends BaseActivity {
     public void findView() {
 
     }
+
+    @Override
+    public void onKeyDown() {
+
+    }
 }

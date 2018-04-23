@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:background="#474744"
+			  android:layout_height="82dp">
+	<LinearLayout
+			android:orientation="horizontal"
+			android:background="#474744"
+			android:layout_width="match_parent"
+			android:layout_height="72dp">
+
+		<LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="match_parent">
+			<ImageView
+					android:id="@+id/one"
+					android:layout_width="36dp"
+					android:layout_height="36dp"/>
+
+		</LinearLayout>
+		<LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="match_parent">
+			<ImageView
+					android:id="@+id/two"
+					android:layout_width="36dp"
+					android:layout_height="36dp"/>
+
+		</LinearLayout>
+		<LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="match_parent">
+			<ImageView
+					android:id="@+id/there"
+					android:layout_width="36dp"
+					android:layout_height="36dp"/>
+
+		</LinearLayout>
+		<LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="match_parent">
+			<ImageView
+					android:id="@+id/four"
+					android:layout_width="36dp"
+					android:layout_height="36dp"/>
+
+		</LinearLayout>
+		<LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_weight="1"
+				android:layout_width="0dp"
+				android:layout_height="match_parent">
+			<ImageView
+					android:id="@+id/five"
+					android:layout_width="36dp"
+					android:layout_height="36dp"/>
+
+		</LinearLayout>
+
+
+	</LinearLayout>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="10dp">
+		<View
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="10dp"/>
+		<View
+				android:background="@drawable/main_shape"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="3dp"/>
+		<View
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="10dp"/>
+	</LinearLayout>
+
+
+</LinearLayout>

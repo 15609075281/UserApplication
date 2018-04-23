@@ -1,13 +1,19 @@
 package com.joker.user.ui.activity.guide;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+import com.joker.user.MainActivity;
 import com.joker.user.R;
 import com.joker.user.adapter.guide.GuiDeAdapter;
 import com.joker.user.ui.activity.BaseActivity;
+import com.joker.user.ui.activity.login.LoginActivity;
+import com.joker.user.ui.activity.register.RegisterActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,36 +38,52 @@ public class GuideActivity extends BaseActivity {
         viewPager.setAdapter(guiDeAdapter);
     }
 
+    @Override
+    public void onKeyDown() {
+
+    }
+
     public void data() {
         views = new ArrayList<>();
         View view = LayoutInflater.from(GuideActivity.this).inflate(R.layout.guide1_xml, null);
         View view1 = LayoutInflater.from(GuideActivity.this).inflate(R.layout.guide2_xml, null);
         View view2 = LayoutInflater.from(GuideActivity.this).inflate(R.layout.guide3_xml, null);
-        ImageView imageView1= (ImageView) view2.findViewById(R.id.guide_login);
-        ImageView imageView2= (ImageView) view2.findViewById(R.id.guide_signup);
+        ImageView imageView1 = (ImageView) view2.findViewById(R.id.guide_login);
+        ImageView imageView2 = (ImageView) view2.findViewById(R.id.guide_signup);
+        TextView textView = (TextView) view2.findViewById(R.id.guide_skip);
         imageView1.setOnClickListener(listener);
         imageView2.setOnClickListener(listener);
+        textView.setOnClickListener(listener);
         views.add(view);
         views.add(view1);
         views.add(view2);
     }
-android.view.View.OnClickListener listener =new android.view.View.OnClickListener(){
 
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()){
+    android.view.View.OnClickListener listener = new android.view.View.OnClickListener() {
 
-            case R.id.guide_login:
-                Toast.makeText(GuideActivity.this,"LOGIN",Toast.LENGTH_LONG).show();
-                break;
-            case R.id.guide_signup:
-                Toast.makeText(GuideActivity.this,"SIGN UP",Toast.LENGTH_LONG).show();
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()) {
 
-                break;
+                case R.id.guide_login:
+                    intent(GuideActivity.this, LoginActivity.class);
+                    break;
+                case R.id.guide_signup:
+                    intent(GuideActivity.this, RegisterActivity.class);
+                    break;
 
-            default:
+                case R.id.guide_skip:
+                    intent(GuideActivity.this, MainActivity.class);
+                    break;
+
+                default:
+            }
         }
+    };
+
+    private void intent(Activity activity, Class cl) {
+        startActivity(new Intent(activity, cl));
+        finish();
     }
-};
 
 }

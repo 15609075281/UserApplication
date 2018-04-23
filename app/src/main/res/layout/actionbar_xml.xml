@@ -9,16 +9,17 @@
     >
 
         <TextView
-                android:text="@string/title_login"
+          android:id="@+id/title_bar"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"
                 android:layout_marginLeft="169dp"
                 android:layout_marginTop="29dp"
-                android:layout_width="38dp"
+                android:layout_width="wrap_content"
                 android:layout_height="15dp"/>
 
         <ImageView
+                android:id="@+id/back"
                 android:src="@drawable/back"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="29dp"
