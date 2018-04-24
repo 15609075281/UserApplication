@@ -14,27 +14,28 @@ import android.view.ViewGroup;
  */
 public abstract class BaseFragment extends Fragment {
 
+    public View view;
+    public Context context;
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+        this.context = context;
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(intiView(), container, false);
+        if (view == null) {
+            view = inflater.inflate(intiView(), container, false);
+        }
+        findView();
+        return view;
     }
 
     public abstract int intiView();
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        findView();
-    }
-
     public abstract void findView();
-
 
 
 }

@@ -37,6 +37,7 @@ ext {
     depen = [
             v7   : "com.android.support:appcompat-v7:25.+",
             junit: "junit:junit:4.12",
-            xutils:"org.xutils:xutils:3.3.36"
+            xutils:"org.xutils:xutils:3.3.36",
+            rc:"com.android.support:recyclerview-v7:21.0.+"
     ]
 }

@@ -28,5 +28,5 @@ dependencies {
     compile depen.v7
     compile depen.junit
     compile depen.xutils
-
+    compile depen.rc
 }

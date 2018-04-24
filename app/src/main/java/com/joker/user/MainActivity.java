@@ -1,15 +1,13 @@
 package com.joker.user;
 
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+
 import android.view.View;
 import android.widget.ImageView;
 import com.joker.user.adapter.main.MainAdapter;
 import com.joker.user.ui.activity.BaseActivity;
-import com.joker.user.ui.fragment.five.FiveFragment;
+
 import com.joker.user.ui.fragment.four.FourFragment;
 import com.joker.user.ui.fragment.one.OneFragment;
 import com.joker.user.ui.fragment.there.ThereFragment;
@@ -28,7 +26,6 @@ public class MainActivity extends BaseActivity {
     private ImageView two;
     private ImageView there;
     private ImageView four;
-    private ImageView five;
 
 
     @Override
@@ -44,7 +41,7 @@ public class MainActivity extends BaseActivity {
         two = (ImageView) findViewById(R.id.two);
         there = (ImageView) findViewById(R.id.there);
         four = (ImageView) findViewById(R.id.four);
-        five = (ImageView) findViewById(R.id.five);
+
         //初始显示
         setImage();
         one.setImageResource(R.mipmap.one);
@@ -58,7 +55,7 @@ public class MainActivity extends BaseActivity {
         two.setOnClickListener(listeren);
         there.setOnClickListener(listeren);
         four.setOnClickListener(listeren);
-        five.setOnClickListener(listeren);
+
         main_viewpager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -81,9 +78,7 @@ public class MainActivity extends BaseActivity {
                     case 3:
                         four.setImageResource(R.mipmap.four);
                         break;
-                    case 4:
-                        five.setImageResource(R.mipmap.five);
-                        break;
+
                     default:
                 }
             }
@@ -103,12 +98,12 @@ public class MainActivity extends BaseActivity {
         TwoFragment twoFragment = new TwoFragment();
         ThereFragment thereFragment = new ThereFragment();
         FourFragment fourFragment = new FourFragment();
-        FiveFragment fiveFragment = new FiveFragment();
+
         list.add(oneFragment);
         list.add(twoFragment);
         list.add(thereFragment);
         list.add(fourFragment);
-        list.add(fiveFragment);
+
     }
 
 
@@ -133,10 +128,7 @@ public class MainActivity extends BaseActivity {
                     four.setImageResource(R.mipmap.four);
                     main_viewpager.setCurrentItem(3);
                     break;
-                case R.id.five:
-                    five.setImageResource(R.mipmap.five);
-                    main_viewpager.setCurrentItem(4);
-                    break;
+
                 default:
 
             }
@@ -148,7 +140,7 @@ public class MainActivity extends BaseActivity {
         two.setImageResource(R.mipmap.two_true);
         there.setImageResource(R.mipmap.there_true);
         four.setImageResource(R.mipmap.four_true);
-        five.setImageResource(R.mipmap.five_true);
+
     }
 
     @Override
