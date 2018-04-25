@@ -11,6 +11,7 @@ import com.joker.user.MainActivity;
 import com.joker.user.R;
 import com.joker.user.persene.login.LoginPersene;
 import com.joker.user.ui.activity.BaseActivity;
+import com.joker.user.ui.activity.forgotpassword.ForGotPWActivity;
 import com.joker.user.ui.activity.guide.GuiDeOneActivity;
 import com.joker.user.view.login.LoginView;
 
@@ -60,6 +61,7 @@ public class LoginActivity extends BaseActivity implements LoginView {
         login_continue = (ImageView) findViewById(R.id.login_continue);
 
         back.setOnClickListener(listener);
+        login_fp.setOnClickListener(listener);
         login_continue.setOnClickListener(listener);
     }
 
@@ -79,9 +81,11 @@ public class LoginActivity extends BaseActivity implements LoginView {
                     startActivity(new Intent(LoginActivity.this, GuiDeOneActivity.class));
                     finish();
                     break;
+                case R.id.login_fp:
+                    startActivity(new Intent(LoginActivity.this, ForGotPWActivity.class));
+                    break;
 
                 case R.id.login_continue:
-
                     loginPersene.setImage();
                     break;
 

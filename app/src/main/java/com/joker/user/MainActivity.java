@@ -44,12 +44,12 @@ public class MainActivity extends BaseActivity {
 
         //初始显示
         setImage();
-        one.setImageResource(R.mipmap.one);
+        two.setImageResource(R.mipmap.two);
         data();
         MainAdapter mainAdapter = new MainAdapter(getSupportFragmentManager(), list);
         main_viewpager.setAdapter(mainAdapter);
         //初始加载页
-        main_viewpager.setCurrentItem(0);
+        main_viewpager.setCurrentItem(1);
 
         one.setOnClickListener(listeren);
         two.setOnClickListener(listeren);
@@ -94,13 +94,13 @@ public class MainActivity extends BaseActivity {
 
     public void data() {
         list = new ArrayList<>();
-        OneFragment oneFragment = new OneFragment();
         TwoFragment twoFragment = new TwoFragment();
+        OneFragment oneFragment = new OneFragment();
         ThereFragment thereFragment = new ThereFragment();
         FourFragment fourFragment = new FourFragment();
 
-        list.add(oneFragment);
         list.add(twoFragment);
+        list.add(oneFragment);
         list.add(thereFragment);
         list.add(fourFragment);
 

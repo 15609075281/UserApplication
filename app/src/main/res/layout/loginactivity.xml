@@ -14,7 +14,7 @@
 		<ImageView
 				android:src="@mipmap/login_l"
 				android:layout_width="64dp"
-				android:layout_marginLeft="156dp"
+				android:layout_gravity="center_horizontal"
 				android:layout_marginTop="154dp"
 				android:layout_height="24dp"/>
 
@@ -47,13 +47,14 @@
 
 		<ImageView
 				android:id="@+id/login_fp"
-				android:layout_marginLeft="152dp"
+				android:layout_gravity="center_horizontal"
 				android:layout_marginTop="28dp"
 				android:src="@mipmap/login_fp"
 				android:layout_width="72dp"
 				android:layout_height="11dp"/>
 
 		<LinearLayout
+				android:gravity="center"
 				android:layout_marginTop="22dp"
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
@@ -61,7 +62,6 @@
 			<ImageView
 					android:id="@+id/login_f"
 					android:src="@mipmap/login_f"
-					android:layout_marginLeft="121dp"
 					android:layout_width="56dp"
 					android:layout_height="56dp"/>
 			<ImageView

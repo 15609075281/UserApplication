@@ -7,7 +7,7 @@
 	<ImageView
 			android:id="@+id/rl_image"
 			android:src="@mipmap/ic_launcher"
-			android:layout_width="50dp"
-			android:layout_height="50dp"/>
+			android:layout_width="150dp"
+			android:layout_height="100dp"/>
 
 </LinearLayout>

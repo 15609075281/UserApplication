@@ -22,6 +22,8 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     public abstract void findView();
 
+
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (event.KEYCODE_BACK == keyCode) {

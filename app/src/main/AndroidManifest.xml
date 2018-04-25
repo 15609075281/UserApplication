@@ -11,22 +11,26 @@
 			android:name="user.joker.com.libs_base.MyApplication"
 	>
 		<activity android:name=".MainActivity">
+
+		</activity>
+
+		<!--guide-->
+		<activity android:name=".ui.activity.guide.GuideActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
-
-		<!--guide-->
-		<activity android:name=".ui.activity.guide.GuideActivity">
-
-		</activity>
 		<activity android:name=".ui.activity.guide.GuiDeOneActivity">
 			
 		</activity>
 		<!--login-->
 		<activity android:name=".ui.activity.login.LoginActivity">
+
+		</activity>
+		<!--forgot password-->
+		<activity android:name=".ui.activity.forgotpassword.ForGotPWActivity">
 
 		</activity>
 		<!--register-->
