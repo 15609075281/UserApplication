@@ -10,117 +10,120 @@
 		<include layout="@layout/fragmentbar_xml"></include>
 
 
-			<LinearLayout
-					android:layout_marginBottom="83dp"
-					android:orientation="vertical"
-					android:background="#ffffff"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent">
+		<LinearLayout
+				android:layout_marginBottom="83dp"
+				android:orientation="vertical"
+				android:background="#ffffff"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
 
-				<!--顶部菜单-->
-				<RelativeLayout
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content">
-					<ImageView
-							android:layout_margin="2dp"
-							android:src="@mipmap/ic_launcher"
-							android:layout_width="30dp"
-							android:layout_height="30dp"/>
+			<!--顶部菜单-->
+			<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+				<ImageView
+						android:layout_margin="2dp"
+						android:src="@mipmap/ic_launcher"
+						android:layout_width="30dp"
+						android:layout_height="30dp"/>
+
+				<LinearLayout
+						android:layout_marginLeft="10dp"
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="80dp">
 
 					<LinearLayout
-							android:layout_marginLeft="10dp"
-							android:orientation="horizontal"
-							android:layout_width="match_parent"
-							android:layout_height="80dp">
-
-						<LinearLayout
-								android:gravity="center"
-								android:layout_width="0dp"
-								android:layout_weight="1"
-								android:orientation="vertical"
-								android:layout_height="match_parent">
-							<ImageView
-									android:src="@mipmap/one_one_true"
-									android:layout_width="36dp"
-									android:layout_height="22dp"/>
-							<TextView
-									android:layout_marginTop="5dp"
-									android:text="Maohinery Enquiry"
-									android:textSize="8dp"
-									android:layout_width="wrap_content"
-									android:layout_height="wrap_content"/>
-						</LinearLayout>
-						<LinearLayout
-								android:gravity="center"
-								android:layout_width="0dp"
-								android:layout_weight="1"
-								android:orientation="vertical"
-								android:layout_height="match_parent">
-							<ImageView
-									android:src="@mipmap/one_two_true"
-									android:layout_width="36dp"
-									android:layout_height="22dp"/>
-							<TextView
-									android:layout_marginTop="5dp"
-
-									android:text="Parts/Accessonies"
-									android:textSize="8dp"
-									android:layout_width="wrap_content"
-									android:layout_height="wrap_content"/>
-						</LinearLayout>
-						<LinearLayout
-								android:gravity="center"
-								android:layout_width="0dp"
-								android:layout_weight="1"
-								android:orientation="vertical"
-								android:layout_height="match_parent">
-							<ImageView
-									android:src="@mipmap/one_there_true"
-									android:layout_width="36dp"
-									android:layout_height="22dp"/>
-							<TextView
-									android:layout_marginTop="5dp"
-
-									android:text="Maintenance"
-									android:textSize="8dp"
-									android:layout_width="wrap_content"
-									android:layout_height="wrap_content"/>
-						</LinearLayout>
-						<LinearLayout
-								android:gravity="center"
-								android:layout_width="0dp"
-								android:layout_weight="1"
-								android:orientation="vertical"
-								android:layout_height="match_parent">
-							<ImageView
-									android:src="@mipmap/one_four_true"
-									android:layout_width="36dp"
-									android:layout_height="22dp"/>
-							<TextView
-									android:layout_marginTop="5dp"
-
-									android:text="Commercial Vehicle"
-									android:textSize="8dp"
-									android:layout_width="wrap_content"
-									android:layout_height="wrap_content"/>
-						</LinearLayout>
+							android:id="@+id/one_menuone"
+							android:gravity="center"
+							android:layout_width="0dp"
+							android:layout_weight="1"
+							android:orientation="vertical"
+							android:layout_height="match_parent">
+						<ImageView
+								android:src="@mipmap/one_one_true"
+								android:layout_width="36dp"
+								android:layout_height="22dp"/>
+						<TextView
+								android:layout_marginTop="5dp"
+								android:text="Maohinery Enquiry"
+								android:textSize="8dp"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
 					</LinearLayout>
-				</RelativeLayout>
-				<View
-						android:background="#FFB300"
-						android:layout_width="match_parent"
-						android:layout_height="1dp"/>
+					<LinearLayout
+							android:id="@+id/one_menutwo"
+							android:gravity="center"
+							android:layout_width="0dp"
+							android:layout_weight="1"
+							android:orientation="vertical"
+							android:layout_height="match_parent">
+						<ImageView
+								android:src="@mipmap/one_two_true"
+								android:layout_width="36dp"
+								android:layout_height="22dp"/>
+						<TextView
+								android:layout_marginTop="5dp"
 
-				<!--one——列表-->
-				<android.support.v7.widget.RecyclerView
-						android:id="@+id/one_rl"
-						android:scrollbars="vertical"
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content">
+								android:text="Parts/Accessonies"
+								android:textSize="8dp"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+					</LinearLayout>
+					<LinearLayout
+							android:id="@+id/one_menuthere"
+							android:gravity="center"
+							android:layout_width="0dp"
+							android:layout_weight="1"
+							android:orientation="vertical"
+							android:layout_height="match_parent">
+						<ImageView
+								android:src="@mipmap/one_there_true"
+								android:layout_width="36dp"
+								android:layout_height="22dp"/>
+						<TextView
+								android:layout_marginTop="5dp"
+								android:text="Maintenance"
+								android:textSize="8dp"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+					</LinearLayout>
+					<LinearLayout
+							android:id="@+id/one_menufour"
+							android:gravity="center"
+							android:layout_width="0dp"
+							android:layout_weight="1"
+							android:orientation="vertical"
+							android:layout_height="match_parent">
+						<ImageView
+								android:src="@mipmap/one_four_true"
+								android:layout_width="36dp"
+								android:layout_height="22dp"/>
+						<TextView
+								android:layout_marginTop="5dp"
 
-				</android.support.v7.widget.RecyclerView>
+								android:text="Commercial Vehicle"
+								android:textSize="8dp"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+					</LinearLayout>
+				</LinearLayout>
+			</RelativeLayout>
+			<View
+					android:background="#FFB300"
+					android:layout_width="match_parent"
+					android:layout_height="1dp"/>
 
-			</LinearLayout>
+			<!--one——列表-->
+			<android.support.v7.widget.RecyclerView
+					android:id="@+id/one_rl"
+					android:scrollbars="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+			</android.support.v7.widget.RecyclerView>
+
+		</LinearLayout>
 
 	</LinearLayout>
 

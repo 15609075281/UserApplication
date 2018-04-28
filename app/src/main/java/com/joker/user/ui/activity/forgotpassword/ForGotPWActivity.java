@@ -22,6 +22,7 @@ public class ForGotPWActivity extends BaseActivity {
     @Override
     public void findView() {
         title_bar = (TextView) findViewById(R.id.title_bar);
+        title_bar.setText("forgot password");
         back = (ImageView) findViewById(R.id.back);
         back.setOnClickListener(listener);
     }
